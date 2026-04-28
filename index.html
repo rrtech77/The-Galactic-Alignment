@@ -543,6 +543,36 @@
     background: rgba(201,168,76,0.07);
     border-color: rgba(201,168,76,0.3);
   }
+
+  /* ── IMAGE GALLERIES ── */
+  .img-gallery {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .img-gallery.wide { grid-template-columns: 1fr; }
+  .img-gallery.two  { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .img-figure {
+    background: var(--surface);
+    border: 1px solid rgba(201,168,76,0.12);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .img-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+  }
+  .img-figure figcaption {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    padding: 0.6rem 0.8rem;
+    line-height: 1.5;
+  }
 </style>
 </head>
 <body>
@@ -788,6 +818,11 @@
   <div class="wrapper reveal">
     <span class="section-label">Astronomy</span>
     <h2>The Precession of the Equinoxes</h2>
+    <div class="img-gallery two">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Precession.gif" alt="Earth's axial precession — the slow wobble that cycles over ~26,000 years" loading="lazy"><figcaption>Earth's axial precession — the slow wobble that cycles over ~26,000 years</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/fourgini.gif" alt="The Great Year divided into four precessional seasons / zodiacal ages" loading="lazy"><figcaption>The Great Year divided into four precessional seasons / zodiacal ages</figcaption></figure>
+    </div>
+
 
     <p>Our orientation to the larger universe is constantly shifting. Something causes the intersection of the celestial and ecliptic planes to cycle around the ecliptic over an estimated period of 26,000 years, while the tilt of the Earth relative to the Sun's axis keeps seasons in sync.</p>
 
@@ -845,6 +880,15 @@
   <div class="wrapper reveal">
     <span class="section-label">Astronomy</span>
     <h2>Solar Alignment with the Galaxy</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/ncelespole.gif" alt="Galaxy plan view: North Celestial Pole indicates Earth's orientation in the galactic disk" loading="lazy"><figcaption>Galaxy plan view: North Celestial Pole indicates Earth's orientation in the galactic disk</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/ecliptic.jpg" alt="The ecliptic and zodiac in the Age of Taurus — the celestial equator intersects Taurus at 4480 BC" loading="lazy"><figcaption>The ecliptic and zodiac in the Age of Taurus — the celestial equator intersects Taurus at 4480 BC</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/CelEcliptic.gif" alt="The celestial equator and ecliptic planes — nodes mark the equinoxes" loading="lazy"><figcaption>The celestial equator and ecliptic planes — nodes mark the equinoxes</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/GalEcliptic.gif" alt="The galactic and ecliptic planes — the Galactic Equatorial Node (GEN) permanently near the galactic centre" loading="lazy"><figcaption>The galactic and ecliptic planes — the Galactic Equatorial Node (GEN) permanently near the galactic centre</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/modelplan2.jpg" alt="Cardboard model: purple = galactic plane, blue = solar plane (60° tilt), green = Earth's celestial disk (23° tilt)" loading="lazy"><figcaption>Cardboard model: purple = galactic plane, blue = solar plane (60° tilt), green = Earth's celestial disk (23° tilt)</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/solarsytmotion.jpg" alt="The bullet-shaped heliosphere striking the interstellar magnetic field at 60° to the galactic plane (Voyager data)" loading="lazy"><figcaption>The bullet-shaped heliosphere striking the interstellar magnetic field at 60° to the galactic plane (Voyager data)</figcaption></figure>
+    </div>
+
 
     <div class="data-box">
       <div class="data-stat">
@@ -907,6 +951,13 @@
   <div class="wrapper reveal">
     <span class="section-label">Astronomy</span>
     <h2>The Precessional Movement of the Earth's Axis Relative to the Galactic Axis</h2>
+    <div class="img-gallery two">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/GalCelEc.gif" alt="The galactic equator, celestial equator and ecliptic as three intersecting planes" loading="lazy"><figcaption>The galactic equator, celestial equator and ecliptic as three intersecting planes</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/3circles.gif" alt="Movement of the vernal axis relative to the fixed galactic axis at 2160 years ago, 720 years ago, and today — forming a Celtic cross" loading="lazy"><figcaption>Movement of the vernal axis relative to the fixed galactic axis at 2160 years ago, 720 years ago, and today — forming a Celtic cross</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/NCP-GEM-TXT.jpg" alt="Current era: vernal axis (Pisces–Virgo) crosses the fixed galactic axis (Sagittarius–Gemini)" loading="lazy"><figcaption>Current era: vernal axis (Pisces–Virgo) crosses the fixed galactic axis (Sagittarius–Gemini)</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/NCP-PIS-TXT.jpg" alt="6000 years future: vernal point reaches Sagittarius; the NCP comes closest to the galactic plane" loading="lazy"><figcaption>6000 years future: vernal point reaches Sagittarius; the NCP comes closest to the galactic plane</figcaption></figure>
+    </div>
+
 
     <p>Three great circles can be envisioned as planes intersecting the Earth in three dimensions: the galactic equator, the celestial equator, and the ecliptic. Where the galactic plane (violet) meets the ecliptic (blue), a fixed line is formed between the ascending and descending Galactic Equatorial Nodes — permanently anchored at Sagittarius (ascending) and Gemini (descending), since the solar-galactic orientation does not change.</p>
 
@@ -946,6 +997,15 @@
   <div class="wrapper reveal">
     <span class="section-label">The Three Alignments — I</span>
     <h2>The Galactic Alignment of 1998</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Atlasfulls.jpg" alt="Star chart from The Times Atlas of the World (1990) — galactic equator cuts the ecliptic at the solstice points" loading="lazy"><figcaption>Star chart from The Times Atlas of the World (1990) — galactic equator cuts the ecliptic at the solstice points</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/1998.gif" alt="December 21 2012 solstice galactic alignment at High Noon — galactic centre in Sagittarius/Scorpio, Polaris and Solar Apex on the meridian" loading="lazy"><figcaption>December 21 2012 solstice galactic alignment at High Noon — galactic centre in Sagittarius/Scorpio, Polaris and Solar Apex on the meridian</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Galileo.gif" alt="Winter solstice 1610 AD (Galileo's era) — how far the solstice sun still had to travel to align with the galactic equator" loading="lazy"><figcaption>Winter solstice 1610 AD (Galileo's era) — how far the solstice sun still had to travel to align with the galactic equator</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/RAdiag.jpg" alt="Right Ascension (Ra) — the celestial coordinate analogous to longitude, starting at the vernal equinox" loading="lazy"><figcaption>Right Ascension (Ra) — the celestial coordinate analogous to longitude, starting at the vernal equinox</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/sApex_s.jpg" alt="Top view from the North Galactic Pole: the Sun moves toward the Solar Apex, projected near Hercules" loading="lazy"><figcaption>Top view from the North Galactic Pole: the Sun moves toward the Solar Apex, projected near Hercules</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/antiGalPole_S.gif" alt="The sky at midnight on the winter solstice 1998 — the galactic anti-centre at the cusp of Gemini and Taurus (Gemini–Orion nexus)" loading="lazy"><figcaption>The sky at midnight on the winter solstice 1998 — the galactic anti-centre at the cusp of Gemini and Taurus (Gemini–Orion nexus)</figcaption></figure>
+    </div>
+
 
     <p>In any old atlas with star charts one can find the equatorial zone chart showing the galactic nucleus between Sagittarius and Scorpio. The arrow-point of Sagittarius sits near the crossing of the ecliptic and the galactic equator. When the galactic equator, equinox, and solstice points are also marked, a striking pattern emerges: the ecliptic cuts the celestial equator at the equinoxes, and the <strong style="color:var(--gold-light)">galactic equator cuts the ecliptic at the solstice points</strong> — undulating like a Great Serpent across the sky.</p>
 
@@ -980,6 +1040,10 @@
   <div class="wrapper reveal">
     <span class="section-label">The Three Alignments — II</span>
     <h2>The Galactic Alignment of 4550 BC</h2>
+    <div class="img-gallery wide">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/4550BC_S.gif" alt="Star chart: galactic alignment on the Autumn Equinox at High Noon in 4550 BC — Age of Taurus" loading="lazy"><figcaption>Star chart: galactic alignment on the Autumn Equinox at High Noon in 4550 BC — Age of Taurus</figcaption></figure>
+    </div>
+
     <p><span class="tag tag-gold">Age of Taurus</span></p>
 
     <p>The four seasons of the precessional cycle are marked by the four main stations (colures): the imaginary hoop running through the vernal and autumn equinoxes, and another hoop running through the upper and lower culminations of the Pole of the Ecliptic.</p>
@@ -1002,6 +1066,10 @@
   <div class="wrapper reveal">
     <span class="section-label">The Three Alignments — III</span>
     <h2>The Galactic Alignment of 10,800 BC</h2>
+    <div class="img-gallery wide">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/10880BC_S.gif" alt="Star chart: galactic alignment on the Summer Solstice at High Noon in 10,800 BC — Age of Leo" loading="lazy"><figcaption>Star chart: galactic alignment on the Summer Solstice at High Noon in 10,800 BC — Age of Leo</figcaption></figure>
+    </div>
+
     <p><span class="tag tag-teal">Age of Leo</span></p>
 
     <p>In the 10,800 BC star chart the galactic equator–ecliptic cross has shifted 180° from the 1998 position. The sun lies on the hoop of the Ecliptic Pole culmination again — but the Pole of the Ecliptic is now in its <em>lower</em> culmination, marking a <strong style="color:var(--gold-light)">summer solstice</strong> sun-galactic alignment (rather than winter solstice as in 1998). The vernal equinox is on the western horizon.</p>
@@ -1021,6 +1089,11 @@
   <div class="wrapper reveal">
     <span class="section-label">Cosmology</span>
     <h2>Galactic Portals, Doorways, and Gates to Other Dimensions</h2>
+    <div class="img-gallery two">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/spesu.jpg" alt="Oahspe Plate 62 Se'moin — D'hi (ascent), D'gani (man ascending), S'pe'su (angels descending)" loading="lazy"><figcaption>Oahspe Plate 62 Se'moin — D'hi (ascent), D'gani (man ascending), S'pe'su (angels descending)</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Ceremonyholymass_s.jpg" alt="Oahspe Plate 88: Ceremony of Holy Mass — 13 moon symbols and 12 zodiac signs" loading="lazy"><figcaption>Oahspe Plate 88: Ceremony of Holy Mass — 13 moon symbols and 12 zodiac signs</figcaption></figure>
+    </div>
+
 
     <p>We hear of galactic portals opening doorways or gates to other dimensions. The most profound version of this idea comes from the neo-Pythagorean philosopher's doctrine of two doorways in the cosmic cave through which the soul ascends and descends — later developed in Mithraism as celestial gateways for the ascent and descent of souls.</p>
 
@@ -1054,6 +1127,10 @@
   <div class="wrapper reveal">
     <span class="section-label">Cosmology</span>
     <h2>Reckoning the Seasons</h2>
+    <div class="img-gallery wide">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/cardinal.jpg" alt="The cardinal quadruplicity — the four seasonal quarters of the zodiacal wheel" loading="lazy"><figcaption>The cardinal quadruplicity — the four seasonal quarters of the zodiacal wheel</figcaption></figure>
+    </div>
+
 
     <p>The quarters of the Zodiac are the seasons of the year — but "season" is reckoned differently across traditions. Crucially, seasons are <em>not</em> caused by the Earth's varying distance from the Sun in its elliptical orbit; research shows the Earth is slightly warmer when farther from the Sun. It is axial tilt and its effect on insolation that drives the seasons.</p>
 
@@ -1126,6 +1203,12 @@
   <div class="wrapper reveal">
     <span class="section-label">Mythology</span>
     <h2>The Sacred World Tree as Axis Mundi</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/yggdrasil.jpg" alt="Yggdrasil — the Norse World Tree growing on the cosmic mountain, connecting underworld, earth and sky" loading="lazy"><figcaption>Yggdrasil — the Norse World Tree growing on the cosmic mountain, connecting underworld, earth and sky</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/cosmicserpent.jpg" alt="The two-headed cosmic serpent representing the ecliptic — front head: Venus glyph; rear: k'in (sun) sign. As a serpent bar: emblem of royal authority" loading="lazy"><figcaption>The two-headed cosmic serpent representing the ecliptic — front head: Venus glyph; rear: k'in (sun) sign. As a serpent bar: emblem of royal authority</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/fete.jpg" alt="Oahspe: Fete — circle with all-light centre, four dark corners. 'Beyond Me there is No Appeal.' Form of the Venus glyph" loading="lazy"><figcaption>Oahspe: Fete — circle with all-light centre, four dark corners. 'Beyond Me there is No Appeal.' Form of the Venus glyph</figcaption></figure>
+    </div>
+
 
     <p>The equinoctial and solstitial colures — imaginary hoops intersecting at the poles and connecting the equinoctial and solstitial points — form the cosmic cross. The World Tree is thought to represent this axis. The Norse <em>Yggdrasil</em>, growing on the cosmic mountain, has a taproot associated with Thor's hammer and a giant serpent at the earth's centre (who bickers with the eagle atop the tree). World trees occur across Maya, Aztec, Izapan, Mixtec, and Olmec traditions, dating to at least the Mid/Late Formative periods (1000 BC–200 CE).</p>
 
@@ -1156,6 +1239,12 @@
   <div class="wrapper reveal">
     <span class="section-label">The Mayan Calendar</span>
     <h2>The Long Count Calendar</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Long_Count2012.jpg" alt="December 21 2012 in Long Count and Calendar Round — normal, Codex and Head glyph forms" loading="lazy"><figcaption>December 21 2012 in Long Count and Calendar Round — normal, Codex and Head glyph forms</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Long_Count_date.jpg" alt="La Mojarra Stela 1 (2nd century AD): Long Count 8.5.16.9.7 = 156 CE, with Epi-Olmec script" loading="lazy"><figcaption>La Mojarra Stela 1 (2nd century AD): Long Count 8.5.16.9.7 = 156 CE, with Epi-Olmec script</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/MayaNumbers.jpg" alt="Maya numerals — dot = 1, bar = 5, shell = zero. One of the earliest uses of zero in history" loading="lazy"><figcaption>Maya numerals — dot = 1, bar = 5, shell = zero. One of the earliest uses of zero in history</figcaption></figure>
+    </div>
+
 
     <p>Chorti — the modern Maya language of eastern Guatemala — is the direct descendant of Classic Maya. About 650 of the 800 known Mayan glyphs can be read with some certainty. Mayan scholar Munro Edmonson believes the Long Count was established around 355 BC; the oldest Long Count date found corresponds to 32 BC. The Long Count was used by several Mesoamerican cultures and appears on stelae recording rulers' events, and in the Dresden Codex — the only Maya glyph book that includes Long Count dates.</p>
 
@@ -1243,6 +1332,12 @@
   <div class="wrapper reveal">
     <span class="section-label">The Culmination</span>
     <h2>The Calendar End-Date in 2012 AD</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/hunab.jpg" alt="Hunab Ku — the being embodying the galactic core; Sole God of the Yucatec Maya pantheon" loading="lazy"><figcaption>Hunab Ku — the being embodying the galactic core; Sole God of the Yucatec Maya pantheon</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/darkriff.gif" alt="The December solstice sun converging with the Galactic Center: A) 8000 years ago, B) 4000 years ago, C) 2012" loading="lazy"><figcaption>The December solstice sun converging with the Galactic Center: A) 8000 years ago, B) 4000 years ago, C) 2012</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/ring_s.gif" alt="The Milky Way rims the horizon 360° at dawn on December 21 2012 at 27° north — the sky portal opening" loading="lazy"><figcaption>The Milky Way rims the horizon 360° at dawn on December 21 2012 at 27° north — the sky portal opening</figcaption></figure>
+    </div>
+
 
     <p>The date of alignment marks the end of the 13-baktun Great Cycle — approximately 5,125 years, one "Sun," World Age or cycle of creation — called the Long Count Maya calendar. This is the completion of the 5th Sun. Hunab Ku (meaning "Sole God"), the supreme Yucatec Mayan deity, was considered to embody the galactic core; no images existed of him as he was considered without visible form, representing the solar calendar, balanced forces, and perfection.</p>
 
@@ -1270,6 +1365,12 @@
   <div class="wrapper reveal">
     <span class="section-label">Mayan Theology</span>
     <h2>Ahau, Hun-Hunahpu and the Maize Deity</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/stela_67_s.jpg" alt="Stela 67, Izapa: Solar Lord One Hunapu in his barge with arms outstretched — the December solstice sun in the Milky Way canoe" loading="lazy"><figcaption>Stela 67, Izapa: Solar Lord One Hunapu in his barge with arms outstretched — the December solstice sun in the Milky Way canoe</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/figure3.gif" alt="Stela 11, Izapa: One Hunapu (Sacred Tree) emerging from the mouth of the Milky Way crocodile-frog" loading="lazy"><figcaption>Stela 11, Izapa: One Hunapu (Sacred Tree) emerging from the mouth of the Milky Way crocodile-frog</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/pacal1_s.jpg" alt="Pakal's sarcophagus lid: Itzam-Yeh atop the Sacred Tree/World Cross (yellow); ecliptic serpent cross-piece (green); Pacal descending into Xibalba" loading="lazy"><figcaption>Pakal's sarcophagus lid: Itzam-Yeh atop the Sacred Tree/World Cross (yellow); ecliptic serpent cross-piece (green); Pacal descending into Xibalba</figcaption></figure>
+    </div>
+
 
     <p>Mayans do not consider themselves polytheists. Their supreme deity is <strong style="color:var(--gold-light);">Ahau</strong> — analogous to Jehovah or Allah as creator of everything. There were thirteen gods of the thirteen heavens and nine gods of the nine underworlds. Between the upper heavens and the underworlds of the night and death was the earthly plane — depicted in art as a two-headed turtle lying in a great lake.</p>
 
@@ -1306,6 +1407,38 @@
   <div class="wrapper reveal">
     <span class="section-label">Linda Schele &amp; Khristaan D. Villela</span>
     <h2>Creation, Cosmos, and the Imagery of Palenque and Copan</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/stelaC.jpg" alt="Stela C at Quirigua — Chaah Bitun Ka'an (775 AD) holds a double-headed serpent bar" loading="lazy"><figcaption>Stela C at Quirigua — Chaah Bitun Ka'an (775 AD) holds a double-headed serpent bar</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/quirigua_stela_C_s.jpg" alt="The Creation Passage from Quirigua Stela C — the most detailed account of the first moment: three throne stone-settings" loading="lazy"><figcaption>The Creation Passage from Quirigua Stela C — the most detailed account of the first moment: three throne stone-settings</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/jaguar_throne_s.jpg" alt="A council of gods aiding in the setting of the jaguar throne. God L presides; the Jaguar Paddler sits at the head of the upper row" loading="lazy"><figcaption>A council of gods aiding in the setting of the jaguar throne. God L presides; the Jaguar Paddler sits at the head of the upper row</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/sky_umbilicus.jpg" alt="A god born at Na-Ho-Chan-Witz-Xaman. The twisted snake-headed cords are the kuxan sum — the living sky umbilicus" loading="lazy"><figcaption>A god born at Na-Ho-Chan-Witz-Xaman. The twisted snake-headed cords are the kuxan sum — the living sky umbilicus</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/gemini_orion_nexus.jpg" alt="The Gemini–Orion nexus: Schele's 'place of creation.' The three hearth stars of Orion = the First Three Stone Place of creation" loading="lazy"><figcaption>The Gemini–Orion nexus: Schele's 'place of creation.' The three hearth stars of Orion = the First Three Stone Place of creation</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/maize_god.jpg" alt="The Maize God (Hun-Nal-E) reborn from a cracked turtle carapace by his sons the Hero Twins" loading="lazy"><figcaption>The Maize God (Hun-Nal-E) reborn from a cracked turtle carapace by his sons the Hero Twins</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/turtle.jpg" alt="Turtle and three hearthstones hanging from sun signs and sky band (Madrid Codex) — stars in Orion" loading="lazy"><figcaption>Turtle and three hearthstones hanging from sun signs and sky band (Madrid Codex) — stars in Orion</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/bonampak.jpg" alt="Bonampak murals constellation band — the turtle identified with Orion/Gemini" loading="lazy"><figcaption>Bonampak murals constellation band — the turtle identified with Orion/Gemini</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/tablet_Cross3.jpg" alt="Tablet of the Cross (D5-D8): 542 days after 4 Ahaw 8 Kumk'u, Hun-Ye-Nal 'entered the sky'" loading="lazy"><figcaption>Tablet of the Cross (D5-D8): 542 days after 4 Ahaw 8 Kumk'u, Hun-Ye-Nal 'entered the sky'</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Hunahpu_itzamye.jpg" alt="The Blowgunner Pot: Itzam-Ye lands in the World Tree; Scorpius (Sinaan) at the base — the Milky Way as World Tree" loading="lazy"><figcaption>The Blowgunner Pot: Itzam-Ye lands in the World Tree; Scorpius (Sinaan) at the base — the Milky Way as World Tree</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/tablet_Cross2.jpg" alt="Tablet of the Cross (C9-C13): the raising of the Six Raised-up Sky — the Wakah-Chan with Eight-House-Partitions" loading="lazy"><figcaption>Tablet of the Cross (C9-C13): the raising of the Six Raised-up Sky — the Wakah-Chan with Eight-House-Partitions</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/world_tree.jpg" alt="The World Tree and the ecliptic snake from the Temple of Inscriptions sarcophagus" loading="lazy"><figcaption>The World Tree and the ecliptic snake from the Temple of Inscriptions sarcophagus</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/quirigua.jpg" alt="Chaah Bitun holding the double-headed serpent bar (ecliptic), Stela C at Quirigua" loading="lazy"><figcaption>Chaah Bitun holding the double-headed serpent bar (ecliptic), Stela C at Quirigua</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/maya_zodiac_s.jpg" alt="The New Year Pages and zodiac from the Paris Codex — thirteen Maya constellations along the ecliptic at creation" loading="lazy"><figcaption>The New Year Pages and zodiac from the Paris Codex — thirteen Maya constellations along the ecliptic at creation</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/copan_milkyw.jpg" alt="Copan Temple 22: the Cosmic Monster as the Milky Way over the doorway — associated with Mixcoatl / the east-west Milky Way" loading="lazy"><figcaption>Copan Temple 22: the Cosmic Monster as the Milky Way over the doorway — associated with Mixcoatl / the east-west Milky Way</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/maize_god_canoe_s.jpg" alt="The Maize God in the crocodile-headed canoe — the Paddler Gods (Night and Day) propel it at the east and west extremities of the Milky Way" loading="lazy"><figcaption>The Maize God in the crocodile-headed canoe — the Paddler Gods (Night and Day) propel it at the east and west extremities of the Milky Way</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/crocodile_tree.jpg" alt="The crocodile tree from Izapa Stela 25 — Seven-Macaw (Big Dipper) falling; last act before the fourth creation could begin" loading="lazy"><figcaption>The crocodile tree from Izapa Stela 25 — Seven-Macaw (Big Dipper) falling; last act before the fourth creation could begin</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/peccaries_s.jpg" alt="The Ek' Way and the Ol on the peccary skull of Copan Tomb 1 — the quatrefoil portal to the Otherworld" loading="lazy"><figcaption>The Ek' Way and the Ol on the peccary skull of Copan Tomb 1 — the quatrefoil portal to the Otherworld</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/maize_god_paddlers_s.jpg" alt="MT 140, Tikal: the Maize God (Wak-Chan-Winik) holds the ecliptic snake as the Paddler Gods emerge from its mouths" loading="lazy"><figcaption>MT 140, Tikal: the Maize God (Wak-Chan-Winik) holds the ecliptic snake as the Paddler Gods emerge from its mouths</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/maize_god_chart.jpg" alt="Left: Maize God reborn through the turtle shell crack in the Primordial Sea. Right: sky at dawn on the day of Creation — hearth and turtle at zenith" loading="lazy"><figcaption>Left: Maize God reborn through the turtle shell crack in the Primordial Sea. Right: sky at dawn on the day of Creation — hearth and turtle at zenith</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/chak.jpg" alt="Stone-wielding Chak (lightning deity) cracks open the creation turtle so the Hero Twins can revive the Maize God at dawn" loading="lazy"><figcaption>Stone-wielding Chak (lightning deity) cracks open the creation turtle so the Hero Twins can revive the Maize God at dawn</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/movement_s.jpg" alt="August 13, 690 AD: the Milky Way rotates from World Tree at dusk through Crocodile Tree to the three creation hearth stones at dawn" loading="lazy"><figcaption>August 13, 690 AD: the Milky Way rotates from World Tree at dusk through Crocodile Tree to the three creation hearth stones at dawn</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/movement2_s.jpg" alt="February 5, 691 AD: the Milky Way passes through the Ek' Way; by dawn the Wakah-Chan is fully raised with Scorpius on its trunk" loading="lazy"><figcaption>February 5, 691 AD: the Milky Way passes through the Ek' Way; by dawn the Wakah-Chan is fully raised with Scorpius on its trunk</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/wakah_chan.jpg" alt="The Wakah-Chan — the Milky Way arching south to north as the raised World Tree" loading="lazy"><figcaption>The Wakah-Chan — the Milky Way arching south to north as the raised World Tree</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/foliated.jpg" alt="The Tablet of the Foliated Cross, Palenque: the Maize God reborn as the tree Na-Te'-K'an (First Precious Tree)" loading="lazy"><figcaption>The Tablet of the Foliated Cross, Palenque: the Maize God reborn as the tree Na-Te'-K'an (First Precious Tree)</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/pacal.jpg" alt="Pakal's sarcophagus: the sky on August 31, 683 AD — the Wakah-Chan erected; Pacal falling into Xibalba down the Milky Way" loading="lazy"><figcaption>Pakal's sarcophagus: the sky on August 31, 683 AD — the Wakah-Chan erected; Pacal falling into Xibalba down the Milky Way</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/door.jpg" alt="Cosmic Monster above the northeast door of House E, Palenque — visible at dawn on summer solstice and sunset on winter solstice" loading="lazy"><figcaption>Cosmic Monster above the northeast door of House E, Palenque — visible at dawn on summer solstice and sunset on winter solstice</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/ahaw.jpg" alt="Palace Tablet: K'an-Hok'-Chitam between apparitions of his dead parents — three thrones of creation (jaguar, snake, xok)" loading="lazy"><figcaption>Palace Tablet: K'an-Hok'-Chitam between apparitions of his dead parents — three thrones of creation (jaguar, snake, xok)</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/venus.jpg" alt="The southernmost (Scorpius) and northernmost (Gemini/peccary) extensions of Venus — marking the limits of planetary motion" loading="lazy"><figcaption>The southernmost (Scorpius) and northernmost (Gemini/peccary) extensions of Venus — marking the limits of planetary motion</figcaption></figure>
+    </div>
+
     <p style="font-size:0.85rem; color:var(--muted); font-family:'Share Tech Mono',monospace; letter-spacing:0.05em;">Source: <a href="http://www.mesoweb.com/pari/publications/RT10/Creation.pdf" target="_blank">mesoweb.com/pari/publications/RT10/Creation.pdf</a></p>
 
     <h3>The First Moment — Quirigua Stela C</h3>
@@ -1366,6 +1499,11 @@
   <div class="wrapper reveal">
     <span class="section-label">Application</span>
     <h2>The Creation Myth Applied to 2012</h2>
+    <div class="img-gallery two">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Sacbe_Dzibilchaltun.jpg" alt="Sacbe (white road) at Dzibilchaltun in the Yucatan — the Milky Way was known as the 'zac be'" loading="lazy"><figcaption>Sacbe (white road) at Dzibilchaltun in the Yucatan — the Milky Way was known as the 'zac be'</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Kabah_Arch.jpg" alt="Arch at the end of the sacbé, Kabah, Yucatan" loading="lazy"><figcaption>Arch at the end of the sacbé, Kabah, Yucatan</figcaption></figure>
+    </div>
+
 
     <p>Locating the stages of the creation myth in the sky of 2012 produces a striking celestial schedule — the same cosmic drama re-enacted in the year of the calendar's end:</p>
 
@@ -1425,6 +1563,22 @@
   <div class="wrapper reveal">
     <span class="section-label">Cross-Cultural</span>
     <h2>Syncretism of Christian and Precolumbian Mayan Cross Imagery</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/CodexFejervary-Mayer.jpg" alt="First page of the Codex Fejérváry-Mayer (Aztec): the sacred calendar — the Principal Bird Deity atop four directional world trees with four gods, days and Yearbearers" loading="lazy"><figcaption>First page of the Codex Fejérváry-Mayer (Aztec): the sacred calendar — the Principal Bird Deity atop four directional world trees with four gods, days and Yearbearers</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/church.jpg" alt="The Church of San Juan Chamula, Chiapas — green cross in the churchyard represents the ceiba World Tree raised at the four corners of the world" loading="lazy"><figcaption>The Church of San Juan Chamula, Chiapas — green cross in the churchyard represents the ceiba World Tree raised at the four corners of the world</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/WorldTreeCrossrecto.jpg" alt="La Cruz de las Cuatro Flores — the first Indian-Christian cross of the Americas (ca. 1530s–1540s, Puebla), merging Yukatec, Mixtec, Aztec and Spanish-Christian traditions" loading="lazy"><figcaption>La Cruz de las Cuatro Flores — the first Indian-Christian cross of the Americas (ca. 1530s–1540s, Puebla), merging Yukatec, Mixtec, Aztec and Spanish-Christian traditions</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/cross.jpg" alt="A modern Chiapas Maya cross — the Christian cross merged with the World Tree of the Centre, dressed with flowers and pine boughs as a living being" loading="lazy"><figcaption>A modern Chiapas Maya cross — the Christian cross merged with the World Tree of the Centre, dressed with flowers and pine boughs as a living being</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/foliatedcross.jpg" alt="Temple of the Foliated Cross, Palenque: the World Tree as Na Te K'an (First Precious Tree), symbol of the sky-raising Maize God Hun-Nal-Ye" loading="lazy"><figcaption>Temple of the Foliated Cross, Palenque: the World Tree as Na Te K'an (First Precious Tree), symbol of the sky-raising Maize God Hun-Nal-Ye</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/templecross_s.jpg" alt="Sanctuary tablet in the Temple of the Cross, Palenque — the Wakah-Chan with the Serpent Bar of kingship and the Celestial Bird on its crown" loading="lazy"><figcaption>Sanctuary tablet in the Temple of the Cross, Palenque — the Wakah-Chan with the Serpent Bar of kingship and the Celestial Bird on its crown</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/SanBartolo_s.jpg" alt="The bejewelled Maize God at San Bartolo (100 BC mural) — the oldest known Maya murals depicting the creation myth" loading="lazy"><figcaption>The bejewelled Maize God at San Bartolo (100 BC mural) — the oldest known Maya murals depicting the creation myth</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/quetzalcoatl.jpg" alt="Quetzalcoatl depicted crucified on an equal-armed cross — one of the saviours recorded as crucified before Christ" loading="lazy"><figcaption>Quetzalcoatl depicted crucified on an equal-armed cross — one of the saviours recorded as crucified before Christ</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/sacrificedMaizeGod_s.jpg" alt="The world tree emerging from the sacrificed body of the Maize God" loading="lazy"><figcaption>The world tree emerging from the sacrificed body of the Maize God</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/worldNavel2.jpg" alt="The R'muxux Ruchiliew ('navel of the earth') covered by cloths in the nave of the church at Santiago Atitlan, Guatemala" loading="lazy"><figcaption>The R'muxux Ruchiliew ('navel of the earth') covered by cloths in the nave of the church at Santiago Atitlan, Guatemala</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/worldNavel.jpg" alt="The uncovered R'muxux Ruchiliew prior to planting the cross of Christ into the earth on Holy Friday — entrance into the underworld and resurrection" loading="lazy"><figcaption>The uncovered R'muxux Ruchiliew prior to planting the cross of Christ into the earth on Holy Friday — entrance into the underworld and resurrection</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/27.jpg" alt="Yaxchilan Lintel 25 — a Classic Maya king conjures a vision serpent to open a portal to the underworld" loading="lazy"><figcaption>Yaxchilan Lintel 25 — a Classic Maya king conjures a vision serpent to open a portal to the underworld</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/29.jpg" alt="Yaxchilan Lintel 15 — ancestral spirits reemerge from the serpent's jaws to bestow tokens of royal power" loading="lazy"><figcaption>Yaxchilan Lintel 15 — ancestral spirits reemerge from the serpent's jaws to bestow tokens of royal power</figcaption></figure>
+    </div>
+
 
     <p>Evidence supports the evolution of an indigenous Mesoamerican world-tree cross, which ultimately merged with the Christian cross after the Conquest:</p>
 
@@ -1512,6 +1666,12 @@
   <div class="wrapper reveal">
     <span class="section-label">Vedic Cosmology</span>
     <h2>Sri Yukteswar — A Contemporary of Dr Newborough</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Yuga.jpg" alt="The Yugas according to Sri Yukteswar (adjusted by Jenkins) — the 24,000-year binary orbit cycle; we have come out of the darkest point and ascend toward the Golden Age" loading="lazy"><figcaption>The Yugas according to Sri Yukteswar (adjusted by Jenkins) — the 24,000-year binary orbit cycle; we have come out of the darkest point and ascend toward the Golden Age</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Auro.gif" alt="The sun in the zenith on 22 August at Auroville, Pondicherry (12° latitude) — synthesising the zenith-passage date with the Grand Centre / galactic alignment" loading="lazy"><figcaption>The sun in the zenith on 22 August at Auroville, Pondicherry (12° latitude) — synthesising the zenith-passage date with the Grand Centre / galactic alignment</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/Gochihr.gif" alt="The sky in 4550 BC: Gochihr the cosmic dragon — Head in Gemini (rising), Tail in Sagittarius (setting) — the galactic gate nodes in Persian Bundahishn cosmology" loading="lazy"><figcaption>The sky in 4550 BC: Gochihr the cosmic dragon — Head in Gemini (rising), Tail in Sagittarius (setting) — the galactic gate nodes in Persian Bundahishn cosmology</figcaption></figure>
+    </div>
+
 
     <p>Sri Yukteswar was the master of <strong style="color:var(--gold-light);">Yogananda</strong>, founder of the Self-Realisation Fellowship, whose <em>Autobiography of a Yogi</em> awakened many to Indian spirituality. His book <em>The Holy Science</em> was written in the <strong style="color:var(--gold-light);">mid-1890s</strong> at the behest of his teacher Babaji. In the Laws of Manu the total period of the full cycle is <strong style="color:var(--gold-light);">24,000 years</strong>.</p>
 
@@ -1582,6 +1742,10 @@
   <div class="wrapper reveal">
     <span class="section-label">Cross-Cultural</span>
     <h2>The Tibetan and Buddhist Connection</h2>
+    <div class="img-gallery wide">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/kalachakramandala.gif" alt="The Kalachakra mandala — the Wheel of Time deity in a square palace with four coloured quadrants (Black/east, Red/south, Yellow/west, White/north) surrounded by concentric cosmic circles" loading="lazy"><figcaption>The Kalachakra mandala — the Wheel of Time deity in a square palace with four coloured quadrants (Black/east, Red/south, Yellow/west, White/north) surrounded by concentric cosmic circles</figcaption></figure>
+    </div>
+
 
     <p>Mythical <strong style="color:var(--gold-light);">Shambhala</strong> is believed to be a hidden mountain location in Eurasia — or a bridge on the edge of reality connecting this world to one beyond. Only the pure of heart can live there, enjoying perfect ease, happiness, love and wisdom, with suffering and injustice unknown. Present-day Afghan folklore identifies it with Balkh ("the mother of cities"), known after the Muslim conquest as "Sham-i-Bala" (Elevated Candle).</p>
 
@@ -1628,6 +1792,12 @@
   <div class="wrapper reveal">
     <span class="section-label">Cross-Cultural</span>
     <h2>The Egyptian Connection</h2>
+    <div class="img-gallery">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/shaft_direction.jpg" alt="The southern shaft of the King's Chamber in 2500 BC targeting the meridian transit of Al-Nitak in Orion's belt at 45°" loading="lazy"><figcaption>The southern shaft of the King's Chamber in 2500 BC targeting the meridian transit of Al-Nitak in Orion's belt at 45°</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/earth_sky_mirror.jpg" alt="The Giza plateau as earth-sky mirror: the three pyramids reflect Orion's belt orientation as it appeared at Zep Tepi (10,500 BC)" loading="lazy"><figcaption>The Giza plateau as earth-sky mirror: the three pyramids reflect Orion's belt orientation as it appeared at Zep Tepi (10,500 BC)</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/fig5.gif" alt="Epoch 10,500 BC (Zep Tepi): Leo rises heliacally at the vernal equinox while Al-Nitak culminates on the prime meridian at Giza — the Sphinx gazes at its own astral counterpart" loading="lazy"><figcaption>Epoch 10,500 BC (Zep Tepi): Leo rises heliacally at the vernal equinox while Al-Nitak culminates on the prime meridian at Giza — the Sphinx gazes at its own astral counterpart</figcaption></figure>
+    </div>
+
 
     <p>Through archaeoastronomy, Bauval and Hancock traced the Egyptian cosmological "First Time" (<em>Zep Tepi</em>) to <strong style="color:var(--gold-light);">10,500 BC</strong> — when the gods were said to have reigned and the foundations of Egyptian civilisation were laid. The stars of Orion's belt reached their nadir (lowest meridian point, 9°20' above the horizon at Giza) in 10,500 BC. In 2,500 BC they culminated at 45°; in 2,450 AD they will reach their zenith. Then another 12,960 years to reach the bottom again — the full precessional half-cycle.</p>
 
@@ -1694,6 +1864,11 @@
   <div class="wrapper reveal">
     <span class="section-label">Oahspe Connection</span>
     <h2>The Connection with the Kosmon Sacred Year</h2>
+    <div class="img-gallery two">
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/equinox.jpg" alt="Diagram: the line between the two nodes points to the sun during the equinox and is perpendicular to it during the solstice" loading="lazy"><figcaption>Diagram: the line between the two nodes points to the sun during the equinox and is perpendicular to it during the solstice</figcaption></figure>
+      <figure class="img-figure"><img src="https://rrtech77.github.io/The-Galactic-Alignment/model.jpg" alt="Side view of the galactic alignment cardboard model — solar and Earth axes aligned vertically, pointing to the galactic centre; celestial plane intersects solar plane at 23°" loading="lazy"><figcaption>Side view of the galactic alignment cardboard model — solar and Earth axes aligned vertically, pointing to the galactic centre; celestial plane intersects solar plane at 23°</figcaption></figure>
+    </div>
+
 
     <p>Jenkins has popularised the belief that on the winter solstice of 2012 the <strong style="color:var(--gold-light);">"noonday Sun will exactly conjunct the crossing point of the sun's ecliptic with the galactic equator, while also closely conjuncting the centre of the galaxy."</strong> This is a reasonable claim, since he also indicated that 1998 was the calculated year of alignment — subject to an accuracy error that could easily make the Mayan date correct.</p>
 
